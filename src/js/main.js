@@ -214,7 +214,7 @@ function handleChangeInput() {
 fetchRandomName();
 
 // Eventos
-linkName.addEventListener('mouseover', handleClickLink);
+linkName.addEventListener('click', handleClickLink);
 btnUpdate.addEventListener('click', handleClickUpdate);
 restartBtn.addEventListener('click', handleClickRestart);
 inputSelect.addEventListener('click', handleClickInput);
