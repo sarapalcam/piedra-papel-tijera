@@ -1,0 +1,10 @@
+.game__container {
+  min-height: calc(100vh - 100px);
+  background-color: $backgroundColorGame;
+  @include tablet {
+    min-height: calc(100vh - 380px);
+  }
+  @include desktop {
+    min-height: calc(100vh - 230px);
+  }
+}
