@@ -62,7 +62,11 @@ function fetchWordN(){
   fetch('https://random-word-form.herokuapp.com/random/noun/n')
     .then((responseN) => responseN.json())
     .then((wordN) => {
-      randomWordN.innerHTML = wordN;
+      if(wordN){
+        randomWordN.innerHTML = wordN;
+     } else {
+       randomWordN.innerHTML = "Number";
+     }
     });
 }
 
@@ -70,7 +74,11 @@ function fetchWordD(){
   fetch('https://random-word-form.herokuapp.com/random/adjective/d')
     .then((responseD) => responseD.json())
     .then((wordD) => {
-      randomWordD.innerHTML = wordD;
+      if(wordD){
+         randomWordD.innerHTML = wordD;
+      } else {
+        randomWordD.innerHTML = "Direct";
+      }
     });
 
 }
@@ -79,7 +87,11 @@ function fetchWordY(){
   fetch('https://random-word-form.herokuapp.com/random/noun/y')
     .then((responseY) => responseY.json())
     .then((wordY) => {
-      randomWordY.innerHTML = wordY;
+      if(wordY){
+        randomWordY.innerHTML = wordY;
+     } else {
+       randomWordY.innerHTML = "Yeah";
+     }
     });
 }
 
